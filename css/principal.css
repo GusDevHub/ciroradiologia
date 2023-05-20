@@ -1,0 +1,689 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset da modelo */
+.topo {
+	height: 250px;
+	max-height: 250px;
+}
+.titulos, .conteudos-navegacao {
+	display: none;
+	visibility: hidden;
+}
+.corpo {
+	background-image: none;
+}
+.conteudos {
+	max-width: 2000px;
+	padding: 0;
+}
+/* resultados online */
+.resultados-online-container-geral {
+	display: block;
+	left: 0;
+	position: absolute;
+	top: 92px;
+	width: 100%;
+	z-index: 20;
+}
+.resultados-online-container {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+#resultados-online-form {
+	background: rgba(255,255,255,0.859);
+	box-shadow: 1px 1.732px 3px 0px rgba(0, 0, 0, 0.3);
+	color: #383a3e;
+	float: right;
+	font-family: 'latoregular';
+	font-size: 1.3rem;
+	height: 100rem;
+	max-height: 218px;
+	max-width: 302px;
+	padding: 7px 25px;
+	width: 100%;
+}
+.resultados-online-titulo {
+	color: #424242;
+	display: block;
+	font-family: 'latobold';
+	font-size: 2rem;
+	margin-bottom: 12px;
+	text-align: center;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.082);
+	text-transform: uppercase;
+	width: 100%;
+}
+#resultados-online-form label {
+	display: none;
+	visibility: hidden;
+}
+#resCro, #resSenha, #resConsultar {
+	background: #1b1464;
+	border: solid 1px #bbd8d4;
+	color: #fff;
+	display: block;
+	font-family: 'latoregular';
+	font-size: 1.2rem;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	max-width: 302px;
+	padding: 10px 14px;
+	text-transform: uppercase;
+	width: 100%;
+}
+#resCro::-webkit-input-placeholder, #resSenha::-webkit-input-placeholder {
+	color: #fff;
+}
+#resCro input:-moz-placeholder, #resSenha input:-moz-placeholder {
+	color: #fff;
+}
+#resCro textarea:-moz-placeholder, #resSenha textarea:-moz-placeholder {
+	color: #fff;
+}
+#resCro:focus, #resSenha:focus {
+	background: #00b6bd;
+	outline: none;
+}
+#resConsultar {
+	background: transparent;
+	border: solid 1px #00b6bd;
+	color: #1b1464;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+	max-height: 25px;
+	padding: 5px;
+}
+#resConsultar:focus, #resConsultar:hover {
+	background: #00b6bd;
+	color: #fff;
+}
+.resultados-online-legenda {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 100%;
+}
+#resResgatarSenha, #resCadastrar {
+	background: transparent;
+	border: none;
+	float: right;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#resResgatarSenha:focus, #resResgatarSenha:hover, #resCadastrar:focus, #resCadastrar:hover {
+	color: #00b6bd;
+}
+#resResgatarSenha {
+	float: left;
+	text-decoration: underline;
+}
+/* banners */
+.banners {
+	display: block;
+}
+.banners-container {
+	position: relative;
+	width: 100%;
+}
+/* exames servicos unidades */
+.exames-servicos-unidades {
+	display: block;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	padding-right: 0;
+	width: 100%;
+}
+.exames-servicos-container {
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	max-width: 745px;
+	text-align: center;
+	width: 100%;
+}
+.exames-servicos-unidades-titulo {
+	color: #0e4357;
+	display: block;
+	font-family: 'lato_blackblack';
+	font-size: 2rem;
+	text-align: left !important;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.078);
+	text-transform: uppercase;
+	width: 100%;
+}
+.exames-servicos {
+	display: block;
+	float: left;
+	margin: 10px 3px;
+	max-width: 178px;
+	position: relative;
+	width: 100%;
+}
+.exames-servicos a {
+	text-decoration: none !important;
+}
+.exames-servicos:hover {
+	opacity: .8;
+}
+.exames-servicos-img {
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+.exames-servicos-info {
+	background: rgba(255,255,255,0.75);
+	color: #0e4357;
+	display: block;
+	font-family: 'latobold';
+	font-size: 1.1rem;
+	height: 100rem;
+	left: 0;
+	max-height: 183px;
+	max-height: 331px;
+	opacity: 0;
+	padding: 8px;
+	position: absolute;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 11;
+}
+.exames-servicos-info:hover, .exames-servicos-info:focus {
+	opacity: 1;
+	-webkit-transition: all ease .7s;
+	-moz-transition: all ease .7s;
+	transition: all ease .7s;
+}
+.exames-servicos-info span {
+	display: block;
+}
+.exames-servicos-info:hover span {
+	display: block;
+	margin-left: 20%;
+	-webkit-transition: -webkit-transform .4s ease-out;
+	-o-transition: -o-transform .4s ease-out;
+	transition: transform .4s ease-out;
+	-webkit-transform: translate(-25%, 0);
+	-ms-transform: translate(-25%, 0);
+	-o-transform: translate(-25%, 0);
+	transform: translate(-25%, 0);
+	text-transform: uppercase;
+}
+.exames-servicos-info:hover span:nth-child(2) {
+	-webkit-transition: -webkit-transform .5s ease-out;
+	-o-transition: -o-transform .5s ease-out;
+	transition: transform .5s ease-out;
+}
+.exames-servicos-info:hover span:nth-child(3) {
+	-webkit-transition: -webkit-transform .6s ease-out;
+	-o-transition: -o-transform .6s ease-out;
+	transition: transform .6s ease-out;
+}
+.exames-servicos-info:hover span:nth-child(4) {
+	-webkit-transition: -webkit-transform .7s ease-out;
+	-o-transition: -o-transform .7s ease-out;
+	transition: transform .7s ease-out;
+}
+.exames-servicos-info:hover span:nth-child(5) {
+	-webkit-transition: -webkit-transform .8s ease-out;
+	-o-transition: -o-transform .8s ease-out;
+	transition: transform .8s ease-out;
+}
+.exames-servicos-info:hover span:nth-child(6) {
+	-webkit-transition: -webkit-transform .9s ease-out;
+	-o-transition: -o-transform .9s ease-out;
+	transition: transform .9s ease-out;
+}
+.exames-servicos-info:hover span:last-child {
+	-webkit-transition: -webkit-transform 1s ease-out;
+	-o-transition: -o-transform 1s ease-out;
+	transition: transform 1s ease-out;
+}
+
+.exames-servicos-info span:before {
+	content:"\232A";
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.exames-servicos-txt {
+	color: #fff;
+	display: block;
+	font-family: 'lato_blackblack';
+	font-size: 1.2rem;
+	height: 100rem;
+	line-height: 12rem;
+	margin-top: 6px;
+	max-height: 142px;
+	text-shadow: 1px 1.732px 2px rgba(0, 0, 0, 0.047);
+	text-transform: uppercase;
+	width: 100%;
+}
+.exames-servicos-txt span {
+	display: block;
+	font-size: 1.8rem;
+	margin-bottom: -103px;
+}
+.exames-servicos-txt-estilo-1 {
+	background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(48,248,251) 0%, rgb(27,185,219) 71%, rgb(27,185,219) 89%, rgb(29,184,214) 100%);
+	background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(48,248,251) 0%, rgb(27,185,219) 71%, rgb(27,185,219) 89%, rgb(29,184,214) 100%);
+	background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(48,248,251) 0%, rgb(27,185,219) 71%, rgb(27,185,219) 89%, rgb(29,184,214) 100%);
+}
+.exames-servicos-txt-estilo-2 {
+	background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(8,170,179) 0%, rgb(7,152,164) 71%, rgb(7,152,164) 86%, rgb(7,150,160) 100%);
+	background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(8,170,179) 0%, rgb(7,152,164) 71%, rgb(7,152,164) 86%, rgb(7,150,160) 100%);
+	background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(8,170,179) 0%, rgb(7,152,164) 71%, rgb(7,152,164) 86%, rgb(7,150,160) 100%);
+}
+.exames-servicos-txt-estilo-3 {
+	background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(45,168,200) 10%, rgb(37,142,178) 77%, rgb(37,142,178) 90%, rgb(37,139,175) 100%);
+	background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(45,168,200) 10%, rgb(37,142,178) 77%, rgb(37,142,178) 90%, rgb(37,139,175) 100%);
+	background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(45,168,200) 10%, rgb(37,142,178) 77%, rgb(37,142,178) 90%, rgb(37,139,175) 100%);
+}
+.exames-servicos-txt-estilo-4 {
+	background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(132,210,218) 10%, rgb(104,184,196) 77%, rgb(104,184,196) 87%, rgb(101,182,193) 100%);
+	background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(132,210,218) 10%, rgb(104,184,196) 77%, rgb(104,184,196) 87%, rgb(101,182,193) 100%);
+	background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(132,210,218) 10%, rgb(104,184,196) 77%, rgb(104,184,196) 87%, rgb(101,182,193) 100%);
+}
+/* unidades */
+.unidades-container {
+	display: inline-block;
+	float: left;
+	max-width: 363px;
+	width: 100%;
+}
+.unidades-cabecalho {
+	border-bottom: solid 2px #0ca3af;
+	color: #424242;
+	display: block;
+	font-family: 'lato_lightlight';
+	font-size: 1.4rem;
+	margin-bottom: 7px;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.055);
+	text-transform: uppercase;
+	width: 100%;
+}
+.unidades-container .exames-servicos-unidades-titulo {
+	display: block;
+	margin-bottom: -7px;
+}
+#unidades-form {
+	display: block;
+	margin-bottom: 7px;
+	margin-top: -27px;
+	width: 100%;
+}
+#unidades-select {
+	background: #c2d6d8;
+	border: none;
+	color: #565b60;
+	font-family: 'latoregular';
+	font-size: 1.4rem;
+	max-height: 46px;
+	padding: 16px 15px;
+	width: 100%;
+}
+#unidades-select:hover, #unidades-select:focus {
+	cursor: pointer;
+	outline: none;
+}
+#unidades-exibe {
+	background: #fff;
+	border: solid 4px #ebebeb;
+	color: #88a1a4;
+	display: block;
+	font-family: 'latoregular';
+	font-size: 1.2rem;
+	line-height: 3rem;
+	min-height: 265px;
+	padding: 13px;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.078);
+	width: 100%;
+}
+.unidade-titulo {
+	color: #1881a3;
+	font-family: 'lato_blackblack';
+	font-size: 1.5rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+}
+/* tomografia computadorizada */
+.tomografia-container-geral {
+	background-image: -moz-linear-gradient( 90deg, rgb(245,246,241) 0%, rgb(246,246,241) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(245,246,241) 0%, rgb(246,246,241) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(245,246,241) 0%, rgb(246,246,241) 100%);
+	border-bottom: solid 3px #fff;
+	display: block;
+	float: left;
+	margin-top: 30px;
+	padding-top: 4px;
+	position: relative;
+	width: 100%;
+}
+.tomografia-container-geral:before {
+	background: #68ccd1;
+	box-shadow: 1.5px 2.598px 3px 0px rgba(0, 0, 0, 0.043);
+	content: "";
+	display: block;
+	height: 4px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.tomografia-container {
+	background: url(../img/home-tomografia-bg.jpg) no-repeat right top;
+	margin: 0 auto;
+	max-width: 1170px;
+	min-height: 250px;
+	padding: 25px 2%;
+	width: 100%;
+}
+.tomografia-cabecalho {
+	color: #0e4357;
+	display: block;
+	font-family: 'lato_blackblack';
+	font-size: 2rem;
+	margin-bottom: 15px;
+	max-width: 602px;
+	padding-bottom: 8px;
+	position: relative;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.078);
+	text-transform: uppercase;
+	width: 100%;
+}
+.tomografia-cabecalho:after {
+	background-image: -moz-linear-gradient( 0deg, rgb(24,166,197) 58%, rgb(229,235,232) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(24,166,197) 58%, rgb(229,235,232) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(24,166,197) 58%, rgb(229,235,232) 100%);
+	bottom: 0;
+	height: 4px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.tomografia {
+	max-width: 602px;
+	margin-left: -1%;
+	width: 100%;
+}
+.tomografia a {
+	text-decoration: none;
+}
+.tomografia-link {
+	background-image: -moz-linear-gradient( 90deg, rgb(22,151,180) 0%, rgb(27,184,218) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(22,151,180) 0%, rgb(27,184,218) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(22,151,180) 0%, rgb(27,184,218) 100%);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	color: #fff;
+	display: inline-block;
+	font-family: 'lato_blackblack';
+	font-size: 1.5rem;
+	line-height: 1rem;
+	margin: 0 2% 15px 2%;
+	max-height: 35px;
+	max-width: 230px;
+	padding: 13px 8px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.tomografia-link:first-letter {
+	font-family: 'latobold';
+	font-size: 2rem;
+}
+.tomografia-botao {
+	background-image: -moz-linear-gradient( 90deg, rgb(18,126,151) 0%, rgb(22,154,183) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(18,126,151) 0%, rgb(22,154,183) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(18,126,151) 0%, rgb(22,154,183) 100%);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	color: #fff;
+	font-family: 'lato_blackblack';
+	font-size: 1.3rem;
+	margin-left: 6.5%;
+	max-height: 24px;
+	max-width: 184px;
+	padding: 7px 8px;
+	text-transform: uppercase;
+	width: 100%;
+}
+/* sac */
+.sac-container-geral {
+	background: #e8f5f7;
+	box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.2);
+	display: block;
+	float: left;
+	padding-top: 14px;
+	position: relative;
+	width: 100%;
+}
+.sac-container {
+	background: url(../img/home-sac-img-atendente.png) no-repeat left 30px;
+	margin: 0 auto;
+	max-width: 1170px;
+	min-height: 211px;
+	padding: 0 2%;
+	padding-left: 112px;
+	text-align: center;
+	width: 100%;
+}
+.sac-cabecalho {
+	color: #0e4357;
+	display: block;
+	font-family: 'lato_blackblack';
+	font-size: 2rem;
+	margin-bottom: 50px;
+	padding-left: 90px;
+	text-align: left;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.078);
+	text-transform: uppercase;
+	width: 100%;
+}
+.sac {
+	display: inline-block;
+}
+.sac-icone {
+	display: block;
+	max-width: 100px;
+	width: 100%;
+}
+/* central de relacionamento */
+.central-container-geral {
+	background: #efefef;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	padding-top: 39px;
+	position: relative;
+	width: 100%;
+}
+.central-container {
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	padding-bottom: 50px;
+	text-align: center;
+	width: 100%;
+}
+.central-cabecalho {
+	color: #0e4357;
+	display: block;
+	font-family: 'lato_blackblack';
+	font-size: 2rem;
+	margin-bottom: 35px;
+	padding-left: 166px;
+	text-align: left;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.078);
+	text-transform: uppercase;
+	width: 100%;
+}
+.central {
+	display: inline-block;
+	margin: 0 1.2%;
+}
+.central-icone {
+	display: block;
+	max-width: 175px;
+	width: 100%;
+}
+
+/* responsividades */
+@media screen and (max-width: 1239px) and (min-width: 768px) {
+.resultados-online-container {
+	padding-right: 2%;
+}
+}
+@media screen and (max-width: 1170px) {
+.exames-servicos-container {
+	margin-right: 5px;
+}
+.exames-servicos-unidades {
+	padding: 0 1%;
+}
+}
+@media screen and (max-width: 1152px) {
+.exames-servicos-container, .unidades-container {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+.exames-servicos-container {
+	border-bottom: solid 1px #D4D4D4;
+	margin-bottom: 15px;
+	max-width: 1142px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.exames-servicos-unidades-titulo {
+	margin: 0 auto;
+	max-width: 745px;
+}
+.exames-servicos {
+	display: inline-block;
+	float: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.unidades-container {
+	max-width: 745px;
+}
+#unidades-exibe {
+	min-height: 155px;
+}
+}
+@media screen and (max-width: 1081px) {
+.sac-container {
+	background-position: left bottom;
+	padding-left: 110px;
+}
+.sac-cabecalho {
+	padding-left: 2%;
+}
+}
+@media screen and (max-width: 1050px) {
+.tomografia-container {
+	background: none;
+	float: none;
+	margin: 0 auto;
+	max-width: 546px;
+}
+}
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+.resultados-online-container-geral {
+	top: 1vw;
+}
+}
+@media screen and (max-width: 836px) {
+.central-cabecalho {
+	max-width: 826px;
+	padding: 0;
+	text-align: center;
+}
+.central-icone {
+	max-width: 120px;
+}
+}
+@media screen and (max-width: 650px) {
+.sac-container {
+	background: none;
+	padding-bottom: 15px;
+	padding-left: 2%;
+}
+.sac-cabecalho {
+	margin-bottom: 15px;
+	padding-left: 0;
+	text-align: center;
+}
+}
+@media screen and (max-width: 540px) {
+.tomografia-link, .tomografia-botao {
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 530px;
+	text-align: center;
+}
+.tomografia-botao {
+	max-height: 35px;
+}
+}
+@media screen and (max-width: 767px) {
+.resultados-online-container-geral {
+	background: #c4e2ea;
+	float: left;
+	margin-bottom: 110px;
+	overflow: visible;
+	padding: 2%;
+	position: relative;
+}
+.resultados-online-container {
+	float: none;
+	overflow: visible;
+}
+#resultados-online-form, #resCro, #resSenha, #resConsultar {
+	max-width: 757px;
+}
+.banners-container {
+	display: none;
+	visibility: hidden;
+}
+.exames-servicos-unidades {
+	padding: 0 2%;
+}
+.exames-servicos-container {
+	border-bottom: solid 1px #D4D4D4;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.exames-servicos-unidades-titulo, .unidades-cabecalho {
+	text-align: center !important;
+}
+.exames-servicos {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+.unidades-container {
+	max-width: 757px;
+}
+}
+@media screen and (max-width: 392px) {
+.exames-servicos {
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+@media screen and (max-width: 328px) {
+.resultados-online-container, #resultados-online-form {
+	float: left;
+}
+}
